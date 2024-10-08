@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <title>My Landing Page</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="navbar">
       <div class="logo">
-        <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="user" />
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
       </div>
       <ul>
         <li><a href="#">Home</a></li>
@@ -20,16 +21,19 @@
     </nav>
 
     <header>
-      <!--button to toggle to modal view-->
-      <button class="toggle">
+      <button id="toggle" class="toggle">
         <i class="fa fa-bars fa-2x"></i>
       </button>
+
       <h1>My Landing Page</h1>
+
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, error.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!
       </p>
-      <button class="cta-btn" id="open">Sign up</button>
+
+      <button class="cta-btn" id="open">Sign Up</button>
     </header>
+
     <div class="container">
       <h2>What is this landing page about?</h2>
       <p>
@@ -72,13 +76,15 @@
       </p>
     </div>
 
-    <!--Modal Container-->
+    <!-- Modal -->
     <div class="modal-container" id="modal">
       <div class="modal">
         <button class="close-btn" id="close">
           <i class="fa fa-times"></i>
         </button>
-        <div class="modal-header"><h3>Sign Up</h3></div>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
         <div class="modal-content">
           <p>Register with us to get offers, support and more</p>
           <form class="modal-form">
@@ -123,11 +129,11 @@
         </div>
       </div>
     </div>
-    <!--my scripts-->
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/3135d7f3b9.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
